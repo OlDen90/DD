@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* Обнуление */
+@import "../css/null.css";
+/* -------------------- */
+:root {
+  --btn_text-color: #fff;
+  --white-background: #fff;
+  --height-header: 90px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+.header .header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 24px;
+  width: 1024px;
+  height: var(--height-header);
+  background: #1F75CB;
+}
+.header .header__container .header__menu {
+  display: flex;
+  justify-content: end;
+}
+.header .header__container .header__menu .menu__body {
+  display: flex;
+}
+.header .header__container .header__menu .menu__body .menu__btn {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3px;
+  padding: 0px 16px;
+  height: 42px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: #1F75CB;
+  margin: 0px 0px 0px 24px;
+  color: var(--btn_text-color);
+}
+.header .header__container .header__menu .menu__body .menu__btn .menu__btn_drop-down {
+  margin: 0px 4px 0px 12px;
+  fill: white;
+}
+.header .header__container .header__menu .menu__body .menu__btn:hover {
+  color: #1C1C1C;
+  background: var(--white-background);
+}
+.header .header__container .header__menu .menu__body .menu__btn:hover .menu__btn_drop-down {
+  fill: #DCDCDE;
+}
+@media (min-width: 1025px) {
+  .header .header__container {
+    width: 100%;
+  }
+}
+
+.container {
+  width: 1024px;
+  margin: 0px auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.project-task__column {
+  display: flex;
+  width: 916px;
+  margin: 0px auto;
+  border-bottom: 1px solid #1C1C1C;
+  margin-bottom: 10px;
+  padding: 0px 16px;
+  letter-spacing: 0.3px;
+}
+
+@media (min-width: 1025px) {
+  .container {
+    width: 100%;
+  }
+  .project-task__column {
+    width: auto;
+  }
+}
+.project-task__rows {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.project-task__rows .project-task__row {
+  display: flex;
+  justify-content: space-between;
+}
+.project-task__rows .row-top {
+  margin: 0px 0px 18px 0px;
+}
+.project-task__rows .row-bottom {
+  margin: 0px 0px 7px 0px;
+}
+
+.project-task__title {
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+}
+
+.project-task__logo,
+.menu__btn_logo {
+  border-radius: 50%;
+}
+
+.project-task__left_side {
+  display: flex;
+}
+.project-task__left_side .project-task__point {
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+}
+.project-task__left_side .project-task__creator {
+  margin: 0px 0px 0px 17px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #8E8E8E;
+}
+.project-task__left_side .project-task__status {
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin: 0px 0px 0px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 8px;
+  background: #9E6955;
+  border-radius: 4px;
+}
+
+.project-task__right_side .project-task__spotter {
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #8E8E8E;
+}
+
+.project-task__btn {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: var(--white-background);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin: 9px 0px 0px 16px;
+  padding: 14px;
+  background: var(--height-header);
+}
+.project-task__btn span {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: black;
+  box-shadow: 0px 5px 0px black, 0px 10px 0px black;
+}
+.project-task__btn:hover {
+  background: #DCDCDE;
+}
+
+.plug__container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.plug {
+  min-height: 100vh;
+  display: flex;
+  padding: 24px;
+}
+.plug .plug__body {
+  flex: 1 1 auto;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.plug .plug__body .plug__info {
+  margin: 0px 0px 10px 0px;
+}
+.plug .plug__body .plug__btn {
+  display: inline-block;
+  color: #FFFFFF;
+  background: #1F75CB;
+  border-radius: 4px;
+  align-self: center;
+  padding: 12px 16px;
+}/*# sourceMappingURL=style.css.map */
