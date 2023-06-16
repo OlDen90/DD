@@ -99,21 +99,26 @@
   justify-content: space-between;
 }
 .project-task__rows .row-top {
-  margin: 0px 0px 18px 0px;
+  margin: 0px 0px 4px 0px;
 }
 .project-task__rows .row-bottom {
   margin: 0px 0px 7px 0px;
 }
 
-.project-task__title {
+.project-task__text {
   line-height: 19px;
-  display: flex;
-  align-items: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .project-task__logo,
 .menu__btn_logo {
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
+  margin: 0px 0px 0px 16px;
 }
 
 .project-task__left_side {
