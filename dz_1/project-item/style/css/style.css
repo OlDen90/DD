@@ -1,67 +1,12 @@
 @charset "UTF-8";
 /* Обнуление */
-@import "../css/null.css";
+@import "../../../style/css/null.css";
+/* Обнуление */
+@import "../../../style/css/null.css";
 /* -------------------- */
 :root {
-  --btn_text-color: #fff;
   --white-background: #fff;
-  --height-header: 90px;
-}
-
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
-  position: sticky;
-  top: 0;
-}
-.header .header__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 24px;
-  width: 1024px;
-  height: var(--height-header);
-  background: #1F75CB;
-}
-.header .header__container .header__menu {
-  display: flex;
-  justify-content: end;
-}
-.header .header__container .header__menu .menu__body {
-  display: flex;
-}
-.header .header__container .header__menu .menu__body .menu__btn {
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.3px;
-  padding: 0px 16px;
-  height: 42px;
-  border-radius: 4px;
-  border: 1px solid #fff;
-  background: #1F75CB;
-  margin: 0px 0px 0px 24px;
-  color: var(--btn_text-color);
-}
-.header .header__container .header__menu .menu__body .menu__btn .menu__btn_drop-down {
-  margin: 0px 4px 0px 12px;
-  fill: white;
-}
-.header .header__container .header__menu .menu__body .menu__btn:hover {
-  color: #1C1C1C;
-  background: var(--white-background);
-}
-.header .header__container .header__menu .menu__body .menu__btn:hover .menu__btn_drop-down {
-  fill: #DCDCDE;
-}
-@media (min-width: 1025px) {
-  .header .header__container {
-    width: 100%;
-  }
+  --white-color: #fff;
 }
 
 .container {
@@ -113,8 +58,7 @@
   -webkit-box-orient: vertical;
 }
 
-.project-task__logo,
-.menu__btn_logo {
+.project-task__logo {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -140,7 +84,7 @@
   line-height: 19px;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: var(--white-color);
   margin: 0px 0px 0px 16px;
   flex-direction: column;
   justify-content: center;
@@ -169,7 +113,6 @@
   border-radius: 4px;
   margin: 9px 0px 0px 16px;
   padding: 14px;
-  background: var(--height-header);
 }
 .project-task__btn span {
   width: 3px;
@@ -182,36 +125,4 @@
   background: #DCDCDE;
 }
 
-.plug__container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.plug {
-  min-height: 100vh;
-  display: flex;
-  padding: 24px;
-}
-.plug .plug__body {
-  flex: 1 1 auto;
-  width: 100%;
-  margin: 0px auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-.plug .plug__body .plug__info {
-  margin: 0px 0px 10px 0px;
-}
-.plug .plug__body .plug__btn {
-  display: inline-block;
-  color: #FFFFFF;
-  background: #1F75CB;
-  border-radius: 4px;
-  align-self: center;
-  padding: 12px 16px;
-}/*# sourceMappingURL=style.css.map */
+/* -------------------- *//*# sourceMappingURL=style.css.map */
