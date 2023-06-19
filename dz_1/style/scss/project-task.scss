@@ -113,28 +113,30 @@
     }
 }
 
-.project-task__btn {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    color: var(--white-background);
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    margin: 9px 0px 0px 16px;
-    padding: 14px;
+.project-task__column:hover {
+    .project-task__btn {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        min-width: 42px;
+        height: 42px;
+        color: var(--white-background);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        margin: 9px 0px 0px 16px;
+        padding: 14px;
 
-    & span {
-        width: 3px;
-        height: 3px;
-        border-radius: 50%;
-        background-color: black;
-        box-shadow: 0px 5px 0px black, 0px 10px 0px black;
-    }
+        & span {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: black;
+            box-shadow: 0px 5px 0px black, 0px 10px 0px black;
+        }
 
-    &:hover {
-        background: #DCDCDE;
+        &:hover {
+            background: #DCDCDE;
+        }
     }
 }
