@@ -1,5 +1,5 @@
 /* Обнуление */
-@import "../../../style/css/null.css";
+@import "../../../style/scss/null.scss";
 
 /* -------------------- */
 
@@ -43,7 +43,11 @@
                     margin: 0px 0px 0px 24px;
                     color: var(--btn_text-color);
 
-                    .menu__btn_logo {}
+                    .menu__btn_logo {
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                    }
 
                     .menu__btn_drop-down {
                         margin: 0px 4px 0px 12px;
