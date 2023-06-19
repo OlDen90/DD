@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside,
+section {
+  display: block;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #1C1C1C;
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+
+/* -------------------- */
+:root {
+  --btn_text-color: #fff;
+  --white-background: #fff;
+  --height-header: 90px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+.header .header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 24px;
+  width: 1024px;
+  height: var(--height-header);
+  background: #1F75CB;
+}
+.header .header__container .header__menu {
+  display: flex;
+  justify-content: end;
+}
+.header .header__container .header__menu .menu__body {
+  display: flex;
+}
+.header .header__container .header__menu .menu__body .menu__btn {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.3px;
+  padding: 0px 16px;
+  height: 42px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: #1F75CB;
+  margin: 0px 0px 0px 24px;
+  color: var(--btn_text-color);
+}
+.header .header__container .header__menu .menu__body .menu__btn .menu__btn_logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.header .header__container .header__menu .menu__body .menu__btn .menu__btn_drop-down {
+  margin: 0px 4px 0px 12px;
+  fill: white;
+}
+.header .header__container .header__menu .menu__body .menu__btn:hover {
+  color: #1C1C1C;
+  background: var(--white-background);
+}
+.header .header__container .header__menu .menu__body .menu__btn:hover .menu__btn_drop-down {
+  fill: #DCDCDE;
+}
+@media (min-width: 1025px) {
+  .header .header__container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
