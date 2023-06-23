@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/css/style.css">
+    <title>dz_3</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__menu">
+                <nav class="menu__body">
+                    <a href="../pages/project.html" class="menu__btn">Проекты</a>
+                    <a href="../pages/tasks.html" class="menu__btn">Задачи</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="tasks">
+        <div class="container">
+            <h1 class="title">Задачи</h1>
+            <div class="menu__body menu__body-btn"><a href="#" class="menu__btn" onclick="getToken()">getToken</a>
+            </div>
+            <div class="tasks__items">
+                <div class="tasks__title">Создать (POST)</div>
+                <ul class="menu__body">
+                    <li><a href="#" class="menu__btn" onclick="postXMLTasksSearch()">Поиск задач</a></li>
+                    <li><a href="#" class="menu__btn" onclick="postXMLTasks()">XML</a></li>
+                    <li><a href="#" class="menu__btn" onclick="postFetchTasks()">Fetch</a></li>
+                    <li><a href="#" class="menu__btn" onclick="postAxiosTasks()">Axios</a></li>
+                </ul>
+            </div>
+            <div class="tasks__items">
+                <div class="tasks__title">Получить (GET)</div>
+                <ul class="menu__body">
+                    <li><a href="#" class="menu__btn" onclick="getXMLTasks()">XML</a></li>
+                    <li><a href="#" class="menu__btn" onclick="getFetchTasks()">Fetch</a></li>
+                    <li><a href="#" class="menu__btn" onclick="getAxiosTasks()">Axios</a></li>
+                </ul>
+            </div>
+            <div class="tasks__items">
+                <div class="tasks__title">Редактировать (PUT)</div>
+                <ul class="menu__body">
+                    <li><a href="#" class="menu__btn" onclick="putXMLTasks()">XML</a></li>
+                    <li><a href="#" class="menu__btn" onclick="putFetchTasks()">Fetch</a></li>
+                    <li><a href="#" class="menu__btn" onclick="putAxiosTasks()">Axios</a></li>
+                </ul>
+            </div>
+            <div class="tasks__items last_div">
+                <div class="tasks__title">Удалить (DELETE)</div>
+                <ul class="menu__body">
+                    <li><a href="#" class="menu__btn" onclick="deleteXMLTasks()">XML</a></li>
+                    <li><a href="#" class="menu__btn" onclick="deleteFetchTasks()">Fetch</a></li>
+                    <li><a href="#" class="menu__btn" onclick="deleteAxiosTasks()">Axios</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/xml.js"></script>
+    <!-- <script src="../js/fetch.js"></script> -->
+    <!-- <script src="../js/axios.js"></script> -->
+
+</body>
+
+</html>

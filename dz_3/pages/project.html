@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/css/style.css">
+    <title>dz_3</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__menu">
+                <nav class="menu__body">
+                    <a href="../pages/project.html" class="menu__btn">Проекты</a>
+                    <a href="../pages/tasks.html" class="menu__btn">Задачи</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="project">
+        <div class="container">
+            <h1 class="title">Проекты</h1>
+            <div class="menu__body menu__body-btn"><a href="#" class="menu__btn" onclick="getToken()">getToken</a>
+            </div>
+            <div class="project__items">
+                <div class="project__title">Создать (POST)</div>
+                <ul class="menu__body">
+                    <li><a href="#" class="menu__btn" onclick="postXMLProject()">XML</a></li>
+                    <li><a href="#" class="menu__btn" onclick="postFetchProject()">Fetch</a></li>
+                    <li><a href="#" class="menu__btn" onclick="postAxiosProject()">Axios</a></li>
+                </ul>
+            </div>
+            <div class="project__items">
+                <div class="project__title">Получить (GET)</div>
+                <ul class="menu__body">
+                    <li><a href="#" class="menu__btn" onclick="getXMLProject()">XML</a></li>
+                    <li><a href="#" class="menu__btn" onclick="getFetchProject()">Fetch</a></li>
+                    <li><a href="#" class="menu__btn" onclick="getAxiosProject()">Axios</a></li>
+                </ul>
+            </div>
+            <div class="project__items">
+                <div class="project__title">Редактировать (PUT)</div>
+                <ul class="menu__body">
+                    <li><a href="#" class="menu__btn" onclick="putXMLProject()">XML</a></li>
+                    <li><a href="#" class="menu__btn" onclick="putFetchProject()">Fetch</a></li>
+                    <li><a href="#" class="menu__btn" onclick="putAxiosProject()">Axios</a></li>
+                </ul>
+            </div>
+            <div class="project__items last_div">
+                <div class="project__title">Удалить (DELETE)</div>
+                <ul class="menu__body">
+                    <li><a href="#" class="menu__btn" onclick="deleteXMLProject()">XML</a></li>
+                    <li><a href="#" class="menu__btn" onclick="deleteFetchProject()">Fetch</a></li>
+                    <li><a href="#" class="menu__btn" onclick="deleteAxiosProject()">Axios</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../js/xml.js"></script>
+    <!-- <script src="../js/fetch.js"></script> -->
+    <!-- <script src="../js/axios.js"></script> -->
+
+</body>
+
+</html>
