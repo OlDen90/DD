@@ -15,7 +15,6 @@
     margin-bottom: 10px;
     padding: 0px 16px;
     letter-spacing: 0.3px;
-    position: relative;
 }
 
 @media (min-width: 1025px) {
@@ -26,6 +25,12 @@
     .project-task__column {
         width: auto;
     }
+}
+
+.project-task__item {
+    display: flex;
+    position: relative;
+    width: 100%;
 }
 
 .project-task__rows {
@@ -107,36 +112,37 @@
     display: none;
 }
 
-.project-task__column:hover,
-.project-task__column:focus {
+.project-task__btn {
+    box-sizing: border-box;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 42px;
+    height: 42px;
+    color: $white-background;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: 9px 0px 0px 16px;
+    padding: 14px;
+
+    .project-task__btn-dots {
+        display: block;
+        color: $dots-color;
+    }
+
+    &:hover,
+    &:focus {
+        background: $hover-background;
+    }
+
+    &:active {
+        background: $active-background;
+    }
+}
+
+.project-task__column:hover {
     .project-task__btn {
-        box-sizing: border-box;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        min-width: 42px;
-        height: 42px;
-        color: $white-background;
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        margin: 9px 0px 0px 16px;
-        padding: 14px;
-
-        position: relative;
-
-        .project-task__btn-dots {
-            display: block;
-            color: $dots-color;
-        }
-
-        &:hover,
-        &:focus {
-            background: $hover-background;
-        }
-
-        &:active {
-            background: $active-background;
-        }
     }
 }
 
@@ -164,7 +170,7 @@
 .project-task__btn-sub-list {
     /* Стили для подменю */
     position: absolute;
-    top: calc(100% + 2px);
+    top: auto;
     right: 0;
     background: #fff;
     color: $white-color;
@@ -172,6 +178,8 @@
     padding: 16px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     z-index: 1;
+
+    pointer-events: none;
 
     & li {
         margin-bottom: 16px;
@@ -187,5 +195,18 @@
         text-decoration: none;
         color: #1C1C1C;
         font-size: 14px;
+
+        & span {
+            color: #EE4222;
+        }
     }
+}
+
+.project-task__btn--active+.project-task__btn-sub-list {
+    pointer-events: auto;
+}
+
+.project-task__btn--active {
+    display: flex;
+
 }
