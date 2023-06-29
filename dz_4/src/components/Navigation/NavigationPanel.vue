@@ -7,7 +7,7 @@
                     <ButtonNav href="#" text="Задачи" />
                     <ButtonNav href="#" text="Пользователи" />
                     <ButtonNav :disabledCondition="true" href="#" text="Отключенная кнопка" />
-                    <DropdownButton href="#" :logo-src="logoSrc"></DropdownButton>
+                    <DropdownButton></DropdownButton>
                 </nav>
             </div>
         </div>
