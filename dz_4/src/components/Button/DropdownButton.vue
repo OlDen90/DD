@@ -1,6 +1,7 @@
 <template>
   <div class="example">
-    <a :href="href" class="menu__btn" @click="toggleDropdown" :class="{ 'menu__btn--active': active }" ref="menuBtn">
+    <a :href="href" class="menu__btn btn-drop-down" @click="toggleDropdown" :class="{ 'menu__btn--active': active }"
+      ref="menuBtn">
       <img class="menu__btn-logo" :src="logoSrc" alt="" />
       <DropDown class="menu__btn-drop-down" />
     </a>
